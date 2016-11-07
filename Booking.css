@@ -1,6 +1,5 @@
 #Booking {
-    background-color: white;
-    opacity: 0.7;
+    background-color: rgba(255,255,255,0.7); /*Bruker rgba slik at ingen andre elementer arver opacity*/
     padding: 20px;
     top: 100px;
     bottom: 20px;
@@ -9,7 +8,7 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     position: relative;
-    z-index: -100;
+    z-index: -100; /*Setter nest bakerst slik at dropdown menyen kommer foran.*/
 }
 
 #Booking h1 {
