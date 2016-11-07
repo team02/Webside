@@ -1,0 +1,18 @@
+#Intro {
+    background-color: white;
+    opacity: 0.6;
+    padding: 20px;
+    top: 100px;
+    bottom: 20px;
+    left: 25%;
+    width: 50%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    position: relative;
+    z-index: -100;
+  }
+
+#Intro h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
