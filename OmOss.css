@@ -1,3 +1,225 @@
+#AllTekst {
+  width: 50%;
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+  background: white;
+  opacity: 0.9;
+}
+
+#Meny {
+  width: 100%;
+  top: 0%;
+  text-align: center;
+}
+
+#Meny_Wrapper {
+  height: 70px;
+  padding-top: 1%;
+}
+
+#Meny_Wrapper ul li {
+  list-style: none;
+  display: inline;
+  padding: 1%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  opacity: 1;
+}
+
+#Meny_Wrapper a {
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+  opacity: 1;
+}
+
+.dropbtn {
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Indie Flower', cursive;
+}
+
+.dropdown-content a:hover {
+  border: 0.5px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+#Intro {
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+    z-index: -100;
+  }
+
+#Intro h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#Footer {
+  color: black;
+  bottom: 0%;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+/*body {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+#Meny {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+}
+
+#Meny_Wrapper {
+  height: 70px;
+  background: white;
+  opacity: 0.6;
+  padding-top: 1%;
+}
+
+#Meny_Wrapper ul li {
+  list-style: none;
+  display: inline;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  opacity: 1;
+}
+
+#Meny_Wrapper a {
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+  opacity: 1;
+}
+
+#Meny_Wrapper ul li:hover  {
+    text-decoration: underline;
+}
+
+.dropbtn {
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Indie Flower', cursive;
+}
+
+.dropdown-content a:hover {
+  border: 0.5px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+*/
+#Video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+#Logo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+#Logo img {
+  height: 40%;
+  width: 40%;
+}
+
+/*#Footer {
+  width: 100%;
+  color: black;
+  position: fixed;
+  bottom: 0%;
+  background: white;
+  opacity: 0.6;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 15px;
+  height: 70px;
+  padding-top: 5px;
+}
+
+
 #Intro {
     background-color: rgba(255,255,255,0.6);
     padding: 20px;
