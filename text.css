@@ -1,0 +1,204 @@
+body{
+	background: white;
+}
+
+header,
+article,section,
+hgroup,nav,
+figure {
+	display:block;
+}
+
+/*Stilsetting på navigasjonsmeny starter*/
+nav{
+	background: white;
+	position:fixed;
+	width: 100%;
+	top: 0;
+	z-index: 20;
+}
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a {
+	color: black;
+	display:block;
+	margin-right: 3%;
+	margin-top: 1.2%;
+	float:right;
+	font-size:1.25em;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	text-decoration: overline;
+}
+
+nav img {
+	float: left;
+	height: 7%;
+	width: 7%;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+/*Stilsetting på navigasjonsmeny starter*/
+
+/* Stilsetting på artikler starter */
+
+#page{
+	width: 100%;
+	position:relative;
+}
+
+article{
+	padding:10px;
+}
+
+/*Stilsetting på artikkel 1 - Hyttene*/
+#article1 {
+	margin-top: 10%;
+}
+
+/*Stilsetting på artikkel 2 - Booking*/
+#article2 {
+	background-image: url("kayak.jpeg");
+	background-size: 100%;
+	color: white;
+	font-weight: bold;
+
+}
+
+#Booking {
+	background: white;
+	border-radius: 25px;
+	width: 50%;
+	opacity: 0.9;
+	padding-left: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	color: black;
+}
+
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+input[type=number], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+}
+
+input[type=submit]:hover {
+    font-weight: bold;
+}
+
+/*Stilsetting på artikkel 3 - Om oss*/
+#article3 {
+	background-color: #DCDCDC;
+}
+
+/*#banner {
+    position: relative;
+    height:60%;
+    width:100%;
+    overflow: hidden;
+}
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
+}*/
+
+ul.Styret {
+	list-style-type: none;
+	padding: 2%;
+	text-align: center;
+}
+
+ul.Styret img {
+}
+
+ul.Styret li {
+	display: inline-block;
+	height: 180px;
+	margin: 0 1em 1em 0;
+	position: relative;
+	width: 180px;
+}
+
+span.text-content {
+  background: white);
+  color: white;
+  display: table;
+  height: 180px;
+  position: absolute;
+  width: 180px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.Styret li:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  display: table;
+  height: 180px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 180px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+/*Stilsetting på artikkel 4 - Kontakt*/
+#article4 {
+	  background-image: url("tur.jpg");
+		background-size: 100%;
+}
+
+#article4 iframe {
+	margin-left: 65%;
+}
+
+/* Stilsetting på artikler slutter */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2016 by the authors of this document //-->
+<!-- This is an anonymous submission to be graded in a web development course //-->
+<!-- Team 02 BABED  //-->
+<!-- All inquiries about this document should be addressed to *** //-->
+<html>
+<html lang="no">
+
+<head>
+	<meta charset="utf-8">
+	<title>Copacabina hytteutleie</title>
+	<link rel="stylesheet" href="text.css" />
+</head>
+
+<body>
+	<section id="page"> <!-- Defining the #page section with the section tag -->
+	<header> <!-- Defining the header section of the page with the appropriate tag -->
+		<nav class="clear">
+				<a href="hovedside.html">
+				<img src="CLogo.png" alt="Copacabina-logo">
+			<ul>
+				<li><a href="#article1">Hyttene</a></li>
+				<li><a href="#article2">Booking</a></li>
+				<li><a href="#article3">Om oss</a></li>
+				<li><a href="#article4">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Article 1 start -->
+	<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+		<h2>Hyttene</h2>
+			<p>Dette er en aktuell hytte for deg som er her for å oppleve stedet, turmulighetene og hva Oppdal har å by på. Enkel, men innbydende standard. 2 soverom (dobbeltseng og køyeseng), 1 bad, 1 lite kjøkken, kjøleskap, oppvaskmaskin, tørkeskap (standard i alle hyttene), 1 stue med vedfyringsovn. Går over 1 plan. Liten veranda ved adkomst</p>
+	</article>
+	<!-- Article 1 end -->
+
+	<!-- Article 2 start -->
+	<article id="article2"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+		<h2>Booking</h2>
+		<h2>Ønsker du å leie en hytte? Fyll ut følgende informasjon:</h2>
+
+			<div id="Booking">
+
+			  <form action="action_page.php">
+					<label for="hytte">Velg ønsket hytte:</label><br>
+			    <select id="hytte" name="hytte">
+			      <option value="budsjett">Budsjetthytte</option>
+			      <option value="komfort">Komforthytte</option>
+						<option value="ekstra">Det lille ekstra-hytten</option>
+						<option value="luksus">Luksushytte</option>
+			    </select><br>
+
+			    <label for="antnetter">Antall netter:</label><br>
+			    <input type="number" id="antnetter" name="antnetter"><br>
+
+					<label for="antpersoner">Antall personer:</label><br>
+					<input type="number" id="antpersoner" name="antpersoner"><br>
+
+			    <label for="annet">Annen informasjon (f.eks. allergier):</label><br>
+			    <input type="text" id="annet" name="annet"><br>
+
+					<label for="navn">Navn:</label><br>
+			    <input type="text" id="navn" name="navn"><br>
+
+					<label for="tlf">Telefonnummer:</label><br>
+			    <input type="text" id="tlf" name="tlf"><br>
+
+					<label for="mail">E-post:</label><br>
+			    <input type="text" id="mail" name="mail"><br>
+
+			    <label for="betaling">Velg foretrukket betalingsmetode:</label><br>
+			    <select id="betaling" name="betaling">
+			      <option value="bank">Bankkort</option>
+			      <option value="faktura">Faktura</option>
+			    </select><br>
+
+					<label for="kontonr">Kontonummer:</label><br>
+					<input type="text" id="kontonr" name="kontonr"><br>
+
+					<label for="fakturanr">Merk faktura...:</label><br>
+					<input type="text" id="fakturanr" name="fakturanr"><br>
+
+					 <input type="submit" value="Send bestilling!">
+			</div>
+	</article>
+	<!-- Article 2 end -->
+
+	<!-- Article 3 start -->
+	<article id="article3"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+		<!--<section id="banner">
+   <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+     <source src="Crossroad.mp4" type="video/mp4">
+     <source src="movie.webm" type="video/webm">-->
+    </video>
+		<h2>Om oss</h2>
+				<h1>Copacabina</h1>
+				<p>Copacabina er en familiebedrift, startet i 1993, av fem
+					personer som ikke er i familie på ekte. I 1993 startet teamets eldste
+					medlem organisasjonen, da hun startet interessen for tur i skog i mark
+					og	hyttekos rundt peisen. Etterhvert ble organisasjonen utvidet og det
+					ble	lagt til fire nye deleiere. Da hytteutleien ble enda mer
+					populært på slutten av 90-tallet, kjøpte Copacabina flere
+					hytter. Dette gjør at vi i dag kan tilby utleie av flotte hytter i
+					vakre omgivelser, tilpasset til alle kunders ønsker.</p>
+
+				<ul class="Styret">
+					<li><img src="Martin.jpg" alt="Martin" width="180" height="180">
+					<span class="text-content"><span>Telefon<br><br>413 82 860<br><br>E-post<br><br>martin@copacabina.no</span></span>
+					<p>Daglig leder<br>Martin Langnes</p>
+					</li>
+					<li>
+					<img src="Susanne.jpg" alt="Susanne" width="180" height="180">
+					<span class="text-content"><span>Telefon<br><br>469 48 764<br><br>E-post<br><br>susanne@copacabina.no</span></span>
+					<p>Bookingsansvarlig<br>Susanne Halleen</p>
+					</li>
+					<li>
+					<img src="Emilie.jpg" alt="Emilie" width="180" height="180">
+					<span class="text-content"><span>Telefon<br><br>934 46 354<br><br>E-post<br><br>emilie@copacabina.no</span></span>
+					<p>Sekretær<br>Emilie Moe Gjerde</p>
+					</li>
+					<li>
+					<img src="Gard.jpg" alt="Gard" width="180" height="180">
+					<span class="text-content"><span>Telefon<br><br>469 39 380<br><br>E-post<br><br>gard@copacabina.no</span></span>
+					<p>Økonomiansvarlig<br>Gard Grøttan</p>
+					</li>
+					<li>
+					<img src="Emil.jpg" alt="Emil" width="180" height="180">
+					<span class="text-content"><span>Telefon<br><br>913 58 790<br><br>E-post<br><br>emil@copacabina.no</span></span>
+					<p>Vedlikeholdsansvarlig<br>Emil Eidesmo</p>
+					</li>
+				</ul>
+ <!--</section>-->
+	</article>
+	<!-- Article 3 end -->
+
+	<!-- Article 4 start -->
+	<article id="article4">
+		<h2>Kontakt</h2>
+				<h1>Postadresse</h1>
+				<p>Copacabina, Postboks 527 Storgata, 7012 Trondheim</p>
+				<h1>Besøksadresse</h1>
+				<p>Copacabina, Storgata 22, 7012 Trondheim</p>
+				<p>Åpningstider: man-fre 09:00-15:00</p>
+				<h1>Telefonnummer</h1>
+				<p>+47 815 49 300</p>
+				<h1>E-post</h1>
+				<p>info@copacabina.no</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.5242237622356!2d10.40201443009482!3d63.4355731331153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319ef6092a6d%3A0x7ef095fc2118c222!2sHavnegata+1%2C+7010+Trondheim!5e0!3m2!1sno!2sno!4v1478084307875"
+				width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</article>
+	<!-- Article 4 end -->
+
+	</section> <!-- Closing the #page section -->
+
+	<!-- JavaScript Includes -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
+	<script src="script.js"></script>
+
+	</body>
+
+</html>
