@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Ekstern CSS-fil-->
+    <link rel = 'stylesheet' href = 'booking-stil.css'>
+
+    <!--jQuery og jQuery UI bibliotek for å forenkle enkelete element-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+    <!--Ekstern css-fil slik at kalenderen ser bra ut-->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <!--Ekstern javascript-fil-->
+    <script src = 'Booking-script.js'></script>
+
+    <!--Import av google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>Booking</title>
+  </head>
+  <body>
+
+  <center> <!--Selv om center tag er lite brukt og misslikt, velger vi å bruke dette fordi den sparer mye tid og arbeid-->
+
+  <!--Deklarerer form-->
+  <form action="action_page.php">
+  <div id = 'boks' class = 'boks'>
+  <!--Selector for å velge hytte-->
+    <select name="Velg hytte" id = 'hytteValgt'>
+      <option value = 'ingenValgt' disabled selected>Velg ei hytte </option>
+      <option value="Budsjetthytten">Budsjetthytte</option>
+      <option value="Komforthytten">Komforthytte</option>
+      <option value="Det lille-ekstra hytten">'Det lille ekstra'-hytten</option>
+      <option value="Luksushytten">Luksushytte</option>
+    </select><br>
+
+    <!--De forskjellige input typene for bestillingen.-->
+    <input id = 'innDato' type = 'text' class = 'datovelger' placeholder = 'Innsjekkingsdato'/>
+    <input id = 'utDato' type = 'text' class = 'datovelger'placeholder = 'Utsjekkingsdato'/>
+  </div>
+
+  <div id = 'boks2' class = 'boks'>
+      <input id = 'fulltNavn' type = 'text' name = 'navn' placeholder = 'Fullt navn'/>
+      <input id= 'telefon' type = 'number' name = 'telefon' placeholder = 'Telefonnummer'/>
+      <input id = 'antPers' type = 'number' name = 'ant_pers' placeholder = 'Antall personer'/>
+      <input id= 'email' type = 'email' name = 'email' placeholder = 'Email'/>
+  </div>
+
+  <div id = 'boks3' class = 'boks'>
+    <Select name = 'betalingsmetode' id = 'betalingsmaate'>
+      <option value = '' disbled selected>Velg betalingsmetode</option>
+      <option value = 'Visa'>Visa</option>
+      <option value = 'faktura'>Faktura</option>
+    </select><br>
+
+    <input type = 'number' name = 'kontonummer' placeholder = 'Kontonummer'/>
+    <input type = 'text' name = 'faktura' placeholder = 'Merk faktura'/>
+  </div>
+
+  <!--Knapp som skal dytte skjemaet ut av skjermen og vise nytt skjema-->
+  <button class = 'knapp' type = 'button'>Videre</button>
+
+</center>
+</form>
+
+  </body>
+</html>

@@ -1,0 +1,108 @@
+/*Setter margin og padding til null slik at det ikke forekommer noen kanter.
+setter bakgrunnsbilde for bedre estetikk*/
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url('kayak.jpeg');
+    overflow: hidden;
+}
+
+/*Setter boksen i midten av siden og sentrerer form'en.*/
+#boks
+{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  top: -400px;
+  overflow: hidden;
+
+  /*Legger opp til animasjon ved innlasting av siden*/
+  -webkit-animation-name: boks;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes boks
+{
+  from {top: -400px;}
+  to {top: 180px;}
+}
+
+/*Endrer størrelse på tekst, setter placeholder til midten av innskrivningsfeltene.*/
+input, select
+{
+  font-size: 25px;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Endre størrelsen på teksten til input-feltene*/
+::-webkit-input-placeholder
+{
+  font-size: 25px;
+}
+
+/*Ved innlastning av siden ville en liten del av datepicker vises på skjemen.
+Ved å implementere dette vil dette elementet forsvinne ved innlastningen av siden.
+Dette er fordi datepicker ikke har en posisjon ved innlastningen av skjemaet.
+Ved klikk på skjemaet vil datepicker kalles på nytt og vises i sin riktige posisjon.
+Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepicker-div-visible-strangely-on-first-page-load*/
+#ui-datepicker-div {display: none;}
+
+/*Endrer stil-verdier på knappen slik at knappen passer estetikken*/
+.knapp
+{
+  position: relative;
+  top: -450px;
+  font-size: 25px;
+  border-radius: 10px; /*Runder av hjørnene til knappen*/
+  background-color: #ffac14; /*Setter bakgrunnen til sterk oransje*/
+  font-family: 'Open Sans', sans-serif; /*Google font*/
+  width: 200px;
+  border-style: solid; /*Fjerner box-shadow og gir en 2D effekt*/
+  opacity: 0; /*Setter opacity til 0 slik at knappen kan animeres inn.*/
+
+  -webkit-animation-name: knappFade;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s; /*Forsinker slik at animasjonen passer med siden*/
+}
+
+@-webkit-keyframes knappFade
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*Skjema nummer 2*/
+#boks2
+{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  top: -600px;
+  overflow: hidden;
+}
+
+#boks3
+{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  top: -800px;
+  overflow: hidden;
+}
+
+/*Fjerner pilene ved input-feltene som er av type nummer.
+Hentet fra: http://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
