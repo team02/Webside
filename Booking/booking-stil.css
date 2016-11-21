@@ -59,7 +59,7 @@ Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepi
   top: -450px;
   font-size: 25px;
   border-radius: 10px; /*Runder av hjørnene til knappen*/
-  background-color: #ffac14; /*Setter bakgrunnen til sterk oransje*/
+  background-color: #ff8080; /*Setter bakgrunnen til sterk oransje*/
   font-family: 'Open Sans', sans-serif; /*Google font*/
   width: 200px;
   border-style: solid; /*Fjerner box-shadow og gir en 2D effekt*/

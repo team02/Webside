@@ -1,0 +1,13 @@
+
+/*Bruker .stop() slik at animasjonene begynner umiddelbart.
+Om stop() ikke brukes, vil animasjonene vente i 1-2 sekunder
+og de vil kollidere.*/
+$(boks2).stop().animate({left: '100%'}, sekund);
+$(boks3).stop().animate({top: '-400px'}, sekund);
+$('.knapp').html('Bekreft bestilling');
+
+/*Deaktiverer knappen*/
+$('.knapp').attr('disabled', 'disabled');
+setTimeout(function(){
+  $('.knapp').removeAttr('disabled');
+}, sekund*2);

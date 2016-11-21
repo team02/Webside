@@ -31,10 +31,10 @@
   <!--Selector for å velge hytte-->
     <select name="Velg hytte" id = 'hytteValgt'>
       <option value = 'ingenValgt' disabled selected>Velg ei hytte </option>
-      <option value="Budsjetthytten">Budsjetthytte</option>
-      <option value="Komforthytten">Komforthytte</option>
-      <option value="Det lille-ekstra hytten">'Det lille ekstra'-hytten</option>
-      <option value="Luksushytten">Luksushytte</option>
+      <option value="Tømmerhytta">Tømmerhytta</option>
+      <option value="Fjellparadiset">Fjellparadiset</option>
+      <option value="Sjøperla">Sjøperla</option>
+      <option value="Furutoppen">Furutoppen</option>
     </select><br>
 
     <!--De forskjellige input typene for bestillingen.-->
@@ -42,6 +42,7 @@
     <input id = 'utDato' type = 'text' class = 'datovelger'placeholder = 'Utsjekkingsdato'/>
   </div>
 
+  <!--Andre valideringsboks-->
   <div id = 'boks2' class = 'boks'>
       <input id = 'fulltNavn' type = 'text' name = 'navn' placeholder = 'Fullt navn'/>
       <input id= 'telefon' type = 'number' name = 'telefon' placeholder = 'Telefonnummer'/>
@@ -49,15 +50,16 @@
       <input id= 'email' type = 'email' name = 'email' placeholder = 'Email'/>
   </div>
 
+<!--Tredje valideringsboks-->
   <div id = 'boks3' class = 'boks'>
     <Select name = 'betalingsmetode' id = 'betalingsmaate'>
-      <option value = '' disbled selected>Velg betalingsmetode</option>
+      <option value = '' disabled selected>Velg betalingsmetode</option>
       <option value = 'Visa'>Visa</option>
       <option value = 'faktura'>Faktura</option>
     </select><br>
 
-    <input type = 'number' name = 'kontonummer' placeholder = 'Kontonummer'/>
-    <input type = 'text' name = 'faktura' placeholder = 'Merk faktura'/>
+    <input  id = 'kontonummer' type = 'number' name = 'kontonummer' placeholder = 'Kontonummer'/>
+    <input id = 'faktura' type = 'text' name = 'faktura' placeholder = 'Merk faktura'/>
   </div>
 
   <!--Knapp som skal dytte skjemaet ut av skjermen og vise nytt skjema-->
