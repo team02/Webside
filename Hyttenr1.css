@@ -1,0 +1,133 @@
+body {
+	background: white;
+  /*background-image: url("strå.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;*/
+}
+
+/*Stilsetting på navigasjonsmeny starter*/
+nav{
+	background: white;
+	position:fixed;
+	width: 100%;
+	top: 0;
+	z-index: 20;
+}
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a {
+	color: black;
+	display:block;
+	margin-right: 3%;
+	margin-top: 1.2%;
+	float:right;
+	font-size:1.25em;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	text-decoration: overline;
+}
+
+nav img {
+	float: left;
+	height: 7%;
+	width: 7%;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+
+#bestill {
+width: 200px;
+padding: 20px;
+cursor: pointer;
+font-weight: bolder;
+font-size: 15px;
+background: #ff8080;
+border: none;
+border-radius: 10px;
+font-family: 'Exo', sans-serif;
+text-transform: uppercase;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#bestill:hover {
+background: #ffb3b3;
+}
+
+#Tømmerhytta {
+  text-align: center;
+}
+#Tømmerhytta h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  margin-top: 110px;
+}
+
+#Tømmerhytta h2 {
+  font-family: 'Exo', sans-serif;
+  font-size: 30px;
+  text-decoration: overline;
+}
+
+#Tømmerhytta p {
+  font-family: 'Exo', sans-serif;
+  font-size: 15px;
+  width: 50%;
+  text-align: left;
+}
+
+table {
+    font-family: 'Exo', sans-serif;
+    border-collapse: collapse;
+    width: auto;
+    font-size: 15px;
+    background: #f2f2f2;
+    border: 0.5px solid #8c8c8c;
+    position: relative;
+    margin: 0 auto;
+}
+
+th {
+  font-weight: bolder;
+}
+
+td, th {
+    border: 0.5px solid #8c8c8c;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+.bilder {
+  margin-bottom: 30px;
+  margin-top: 120px;
+}
+
+.mySlides {
+  max-width: 450px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#knapp a{
+  color: white;
+  background-color: #ff8080;
+  margin: 10px;
+}
