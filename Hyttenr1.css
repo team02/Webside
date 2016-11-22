@@ -1,15 +1,12 @@
 body {
-	background-image: url("natur.jpg");
 	font-family: 'Exo', sans-serif;
 }
 
-/*Stilsetting på navigasjonsmeny starter*/
 nav{
 	background: white;
 	position:fixed;
 	width: 100%;
 	top: 0;
-	z-index: 20;
 	font-family: 'Exo', sans-serif;
 }
 
@@ -42,14 +39,68 @@ nav img {
 	margin-bottom: 1%;
 }
 
-#Tømmerhytta {
-  text-align: center;
+nav .dropbtn {
+  background-color: white;
+	font-family: 'Exo', sans-serif;
+  border: none;
+  cursor: pointer;
+	color: black;
+	display:block;
+	margin-left: 30%;
+	margin-top: 1.2%;
+	float:right;
+	font-size:1.25em;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
 }
 
-#Tømmerhytta h1 {
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav .dropdown-content a {
+	color: black;
+	display:block;
+	float:right;
+	font-size:1.25em;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+nav .dropdown-content a:hover {
+  border: 0.5px solid black;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown:hover .dropbtn {
+    text-decoration: underline;
+}
+
+#bilder {
+  text-align: center;
+	background-image: url("natur.jpg");
+}
+
+#bilder h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 45px;
+  font-size: 55px;
   margin-top: 110px;
+	font-weight: lighter;
+	margin-bottom: 10px;
 }
 
 /* Slideshow container */
@@ -57,10 +108,9 @@ nav img {
 	margin: 0 auto;
   position: relative;
 	width: 50%;
-	margin-bottom: 1px;
-  margin-top: 10px;
-
+	margin-bottom: 10px;
 }
+
 .slideshow-container img {
 	  max-width: 900px;
 		max-height: 500px;
@@ -82,6 +132,7 @@ nav img {
 .next {
   right: 0;
 }
+
 .prev {
   left: 0;
 }
@@ -91,22 +142,12 @@ nav img {
   font-size: 50px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 13px;
-  width: 13px;
+  height: 20px;
+  width: 20px;
 	background-color: #ffb3b3;
-  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 	margin-bottom: 10px;
@@ -134,49 +175,24 @@ nav img {
   to {opacity: 1}
 }
 
-#bakgrunn {
+#om_tommerhytta {
 background: white;
 text-align: center;
 padding: 20px;
 }
 
-#bakgrunn h2 {
+#om_tommerhytta h2 {
   font-family: 'Exo', sans-serif;
-  font-size: 30px;
-  text-decoration: overline;
+  font-size: 40px;
+	text-decoration: overline;
 	margin-top: 1px;
-}
-
-#bakgrunn p {
-  font-family: 'Exo', sans-serif;
-  font-size: 15px;
-  width: 50%;
-  margin: 0 auto;
-	margin-bottom: 25px;
-	margin-top: 10px;
-}
-
-#bakgrunn img {
-	width: 40%;
-	margin-bottom: 10px;
-}
-
-#bakgrunn iframe {
-	width: 70%;
-}
-#yr{
- position: relative;
- margin:0 auto;
- text-decoration: underline;
-
-
+	font-weight: bold;
 }
 
 table {
   font-family: 'Exo', sans-serif;
-  border-collapse: collapse;
   width: auto;
-  font-size: 12px;
+  font-size: 14px;
   background: #f2f2f2;
   position: relative;
 	margin: 0 auto;
@@ -186,32 +202,53 @@ table {
 
 th {
   font-weight: bolder;
-	font-size: 14px;
 	text-transform: uppercase;
+	background-color: #e6e6e6;
 }
 
 td, th {
     text-align: center;
     padding: 8px;
+		border: 1px solid #e6e6e6;
 }
 
-tr:nth-child(even) {
-    background-color: #e6e6e6;
+#om_tommerhytta p {
+  font-family: 'Exo', sans-serif;
+  font-size: 18px;
+  width: 50%;
+  margin: 0 auto;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#om_tommerhytta img {
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+#om_tommerhytta iframe {
+	width: 70%;
+}
+
+#yr{
+ text-align: center;
+ text-decoration: underline;
 }
 
 #bestill {
-width: 200px;
-padding: 20px;
-cursor: pointer;
-font-weight: bolder;
-font-size: 15px;
-background: #ff8080;
-border: none;
-border-radius: 10px;
-font-family: 'Exo', sans-serif;
-text-transform: uppercase;
-position: relative;
-margin: 0 auto;
+	width: 200px;
+	padding: 20px;
+	cursor: pointer;
+	font-weight: bolder;
+	font-size: 15px;
+	background: #ff8080;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Exo', sans-serif;
+	text-transform: uppercase;
+	position: relative;
+	margin: 0 auto;
 }
 
 a, a:visited {

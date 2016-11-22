@@ -10,49 +10,50 @@
 	<link rel="stylesheet" href="Hyttenr1.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 
 <body>
-  	<header> <!-- Defining the header section of the page with the appropriate tag -->
+  	<header>
   		<nav class="clear">
   				<a href="hovedside.html">
   				<img src="CLogo.png" alt="Copacabina-logo">
   			<ul>
-  				<li><a href="#article1">Hyttene</a></li>
-  				<li><a href="#article2">Om oss</a></li>
   				<li><a href="#article3">Kontakt</a></li>
+  				<li><a href="#article2">Om oss</a></li>
+          <div class="dropdown">
+          <button class="dropbtn">Hyttene</button>
+            <div class="dropdown-content">
+              <a href="Budsjetthytte.html">Budsjetthytte</a>
+              <a href="Komforthytte.html">Komforthytte</a>
+              <a href="DetLilleEkstrahytte.html">Litt ekstra</a>
+              <a href="Luksushytte.html">Luksushytte</a>
+            </div>
+          </div>
   			</ul>
   		</nav>
   	</header>
 
-<div id="Tømmerhytta">
+<article id="bilder">
     <h1>Tømmerhytta</h1>
 
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <div class="numbertext">1 / 9</div>
         <img src="hytte1-8.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">2 / 9</div>
         <img src="hytte1-2.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">3 / 9 </div>
         <img src="hytte1-3.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">4 / 9</div>
         <img src="hytte1-5.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">5 / 9</div>
         <img src="hytte1-6.jpg" style="width:100%">
       </div>
 
@@ -62,24 +63,20 @@
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">7 / 9</div>
         <img src="hytte1-7.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">8 / 9</div>
         <img src="hytte1-9.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">9 / 9</div>
         <img src="hytte1-10.jpg" style="width:100%">
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
 
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
@@ -95,53 +92,55 @@
     </div>
   </div>
 
-<div id="bakgrunn">
+<article id="om_tommerhytta">
   <h2>Info om utleiestedet</h2>
-    <img src="tommerhytte.png">
-<table>
-  <tr>
-    <th>Fasiliteter</th>
-    <th>Priser</th>
-    <th>Soverom</th>
-  </tr>
-  <tr>
-    <td>Kjøkken</td>
-    <td>Rengjøringsgebyr: 500kr</td>
-    <td>Soverom 1: 1 dobbeltseng</td>
-  </tr>
-  <tr>
-    <td>TV</td>
-    <td>Medlemsrabatt: -15%</td>
-    <td>Soverom 2: 1 enkeltseng</td>
-  </tr>
-  <tr>
-    <td>Vaskemaskin</td>
-    <td>Pris per natt: 1699kr</td>
-    <td>Soverom 3: 1 køyeseng</td>
-  </tr>
-  <tr>
-    <td>Internett</td>
-    <td>Ferdig oppvarmet: 500kr</td>
-    <td>Soverom 4: 1 dobbeltseng</td>
-  </tr>
-</table>
 
-<p>Oppdal er en naturperle og hytta er et perfekt utgangspunkt for
-  opplevelser både sommer og vinter. Langrennsløypene starter ved hytta
-  og er tilknyttet et milelangt løypenett. Gå toppturer på Storhornet
-  med start på hyttetrappa. 15 min kjøring til skiheisene i Vangslia.
-  På sommeren tilbyr Trollheimen utallige flotte turmuligheter. Hytta
-  er laget i hundre år gammelt laftet tømmer og ligger skjermet innerst
-  i en blindvei og gir virkelig den genuine hyttefølelsen.</p>
+  <table>
+    <tr>
+      <th>Fasiliteter</th>
+      <th>Priser</th>
+      <th>Soverom</th>
+    </tr>
+    <tr>
+      <td>Kjøkken</td>
+      <td>Rengjøringsgebyr: 500kr</td>
+      <td>Soverom 1: 1 dobbeltseng</td>
+    </tr>
+    <tr>
+      <td>TV</td>
+      <td>Medlemsrabatt: -15%</td>
+      <td>Soverom 2: 1 enkeltseng</td>
+    </tr>
+    <tr>
+      <td>Vaskemaskin</td>
+      <td>Pris per natt: 1699kr</td>
+      <td>Soverom 3: 1 køyeseng</td>
+    </tr>
+    <tr>
+      <td>Internett</td>
+      <td>Ferdig oppvarmet: 500kr</td>
+      <td>Soverom 4: 1 dobbeltseng</td>
+    </tr>
+  </table>
+
+  <p>Oppdal er en naturperle og hytta er et perfekt utgangspunkt for
+    opplevelser både sommer og vinter. Langrennsløypene starter ved hytta
+    og er tilknyttet et milelangt løypenett. Gå toppturer på Storhornet
+    med start på hyttetrappa. 15 min kjøring til skiheisene i Vangslia.
+    På sommeren tilbyr Trollheimen utallige flotte turmuligheter. Hytta
+    er laget i hundre år gammelt laftet tømmer og ligger skjermet innerst
+    i en blindvei og gir virkelig den genuine hyttefølelsen.</p>
+
+    <img src="tommerhytte.png">
 
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1835.4467931433387!2d9.66544515168512!3d62.58275796495086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46135401a30eac93%3A0xf1af3aa868b80384!2sDovrevegen+40%2C+7340+Oppdal!5e0!3m2!1sno!2sno!4v1479824215424"frameborder="0" style="border:0" allowfullscreen></iframe>
-<br>
-<div id="yr">
-<script src="http://www.yr.no/sted/Norge/Sør-Trøndelag/Oppdal/Oppdal/ekstern_boks_stripe.js">
-</script><noscript>
-<a href="http://www.yr.no/sted/Norge/Sør-Trøndelag/Oppdal/Oppdal/">yr.no: Værvarsel for Oppdal</a>
-</noscript>
-</div>
+
+  <div id="yr">
+    <script src="http://www.yr.no/sted/Norge/Sør-Trøndelag/Oppdal/Oppdal/ekstern_boks_stripe.js">
+    </script><noscript>
+    <a href="http://www.yr.no/sted/Norge/Sør-Trøndelag/Oppdal/Oppdal/">yr.no: Værvarsel for Oppdal</a>
+  </noscript>
+  </div>
 
 <button id='bestill'><a href="hovedside.html">Bestill</a></button>
 </div>
