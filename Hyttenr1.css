@@ -80,6 +80,7 @@ background: #ffb3b3;
   font-family: 'Exo', sans-serif;
   font-size: 30px;
   text-decoration: overline;
+
 }
 
 #Tømmerhytta p {
@@ -114,20 +115,105 @@ tr:nth-child(even) {
     background-color: #e6e6e6;
 }
 
-.bilder {
-  margin-bottom: 30px;
-  margin-top: 120px;
-}
 
-.mySlides {
-  max-width: 450px;
-  height: 300px;
+
+/* Slideshow container */
+.slideshow-container {
+	margin: 0 auto;
   position: relative;
-  margin: 0 auto;
+	width: 50%;
+	margin-bottom: 20px;
+  margin-top: 120px;
+
 }
 
-#knapp a{
+.slideshow-container img {
+	  max-width: 900px;
+		max-height: 600px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 10%;
+  margin-top: -22px;
+  padding: 20px;
   color: white;
-  background-color: #ff8080;
-  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+.prev {
+  left: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+margin-bottom: 50px;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
