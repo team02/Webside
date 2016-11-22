@@ -40,19 +40,15 @@ $(document).ready(function(){
 
       if (hytteValgt === 'ingenValgt') { /*Om ingen hytte er valgt*/
         alert('Vennligst velg ei hytte!'); /*Vis feilmelding*/
-        teller -= 1;
         $('#hytteValgt').focus(); /*Fokuserer rundt drop-down menyen.*/
       } else if (innDato === ''){ /*Om ingen innsjekkingsdato er valgt*/
         alert('Vennligst angi innsjekkingsdato!'); /*Skriv ut melding*/
-        teller -= 1;
         $('#innDato').focus(); /*Fokuser input-felt*/
       } else if (utDato === ''){ /*Om ingen utsjekkingsdato er valgt*/
         alert('Vennligst angi utsjekkingsdato!'); /*Skriv ut melding*/
-        teller -= 1;
         utDato('#utDato').focus(); /*Fokuser input-felt*/
       } else if (innDato < dagensDato || utDato < dagensDato || utDato < innDato){
         alert('Du kan ikke sjekke inn eller ut på en ugyldig dato!');
-        teller -= 1;
       } else { /*Om alle kravene for utfylling er godkjent*/
 
         /*Deaktiver knapp i 2 sekunder slik at brukeren ikke kan hoppe over neste skjema.*/
@@ -124,32 +120,29 @@ $(document).ready(function(){
       } /*If teller == 2*/
 
       if (teller === 3){
-
         var kontonummer = $('#kontonummer').val(); /*Variabel for kontonummer*/
         var faktura = $('#faktura').val(); /*Variabel for faktura*/
         var betalingsmaate = $('#betalingsmaate').val();
 
         $('#betalingsmaate').change(function(){ /*Funksjon som ser om brukeren endrer betalingsmåte*/
             if ($(this).val() === 'Visa'){ /*Om visa er valgt*/
-
               $('#faktura').prop('disabled', true); /*Deaktiver faktura-input*/
-              $('#faktura').css('background-color', 'gray'); /*Setter bakgrunnen til grå slik at brukeren kan se at feltet ikke virker*/
               $('#kontonummer').prop('disabled', false); /*Aktiver visa input*/
-              $('#kontonummer').css('background-color', 'white'); /*Stiller tilbake farge om nødvedig*/
-
             } else if($(this).val() === 'faktura'){ /*Om faktura er valgt*/
-
               $('#kontonummer').prop('disabled', true); /*Deaktiver visa-input*/
-              $('#kontonummer').css('background-color', 'gray'); /*Setter bakgrunn til visa til grå*/
               $('#faktura').prop('disabled', false); /*Aktiver faktura-input*/
-              $('#faktura').css('background-color', 'white'); /*Stiller tilbake feltet om nødvendig*/
             }
 
-
+            if (betalingsmaate == ''){
+              alert('Vennligst velg en betalingsmåte!');
+              teller -= 1;
+            }
 
         });
 
 
       } /*Slutten av if teller = 3*/
+
+
     }); /*Klikk-funksjon*/
   }); /*Document.ready*/
