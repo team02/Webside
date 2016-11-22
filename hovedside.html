@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Copyright (C) 2016 by the authors of this document //-->
 <!-- This is an anonymous submission to be graded in a web development course //-->
 <!-- Team 02 BABED  //-->
@@ -9,44 +9,55 @@
 	<meta charset="utf-8">
 	<title>Copacabina hytteutleie</title>
 	<link rel="stylesheet" href="text.css"/>
+	<!--Link til sidens CSS-fil-->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<!--Font hentet fra googlefonts-->
 	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+	<!--Font hentet fra googlefonts-->
 </head>
 
 <body>
-
-	<section id="page"> <!-- Defining the #page section with the section tag -->
-	<header> <!-- Defining the header section of the page with the appropriate tag -->
+	<section id="page">
+	<!--Hele definert som en #page-section-->
+	<header>
+	<!--Sidens header og navigasjonsfelt-->
 		<nav class="clear">
 				<a href="hovedside.html">
-				<img src="CLogo.png" alt="Copacabina-logo">
+				<img src="CLogo.png" alt="Copacabina-logo og link til hovedside">
+				<!--Nettstedets logo benyttes som en "hjem"-knapp som tar deg tilbake til hovedsiden-->
 			<ul>
-				<li><a href="#article3">Kontakt</a></li>
-				<li><a href="#article2">Om oss</a></li>
-				<li><a href="#article1">Hyttene</a></li>
+				<li><a href="#article3" alt="Link til kontaktinformasjon">Kontakt</a></li>
+				<li><a href="#article2" alt="Link til info om bedriften">Om oss</a></li>
+				<li><a href="#article1" alt="Link til oversikt over hyttene">Hyttene</a></li>
+				<!--Sidens header tar deg til tre ulike steder på hovedsiden,
+				hvor de er definert som artikler med ulike id'er-->
 			</ul>
 		</nav>
 	</header>
 
-	<!-- Article 1 start -->
 	<article id="article1">
+		<!--Sidens første artikkel viser deg oversikten over hyttene som kan leies-->
 		<h1>Disse hyttene kan du leie</h1>
 		<h2>Klikk på hyttene for mer informasjon om utleiestedet</h2>
+		<!--Forklaring på at det er mer informasjon å hente om hyttene ved å
+		klikke på bildene, slik at brukervennligheten blir høy og forståelig-->
 			<ul class="Hyttene">
-		      <li><img src="hytte1-8.jpg" alt="Hytte 1 - Tømmerhytta" width="300" height="300"/>
+		      <li><img src="hytte1-8.jpg" alt="Bilde av Tømmerhytta. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Tømmerhytta</span></span></li>
-					<li><img src="hytte2-8.jpg" alt="Hytte 2 - Fjellparadiset" width="300" height="300"/>
+					<li><img src="hytte2-8.jpg" alt="Bilde av Fjellparadiset. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Fjellparadiset</span></span></li>
-					<li><img src="hytte3-1.jpg" alt="Hytte 3 - Sjøperla" width="300" height="300"/>
+					<li><img src="hytte3-1.jpg" alt="Bilde av Sjøperla. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Sjøperla</span></span></li>
-					<li><img src="hytte4-1.jpg" alt="Hytte 4 - Furutoppen" width="300" height="300"/>
+					<li><img src="hytte4-1.jpg" alt="Bilde av Furutoppen. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Furutoppen</span></span></li>
 				</ul>
+				<!--Listen fungerer som en fremvisning av hyttene, men også linker til mer informasjon om utleiestedene-->
+				<!--Her benyttes JavaScript for å gradvis endre gjennomsiktigheten til
+				teksten over bildene, slik at man markerer hvilket bilde som er valgt. Se Script nederst i HTML-fil-->
 	</article>
-	<!-- Article 1 end -->
 
-	<!-- Article 2 start -->
 	<article id="article2">
+		<!--Sidens andre artikkel forteller deg hva Copacabina-bedriften er og hvem som arbeider der-->
 		<h1>Hvem er Copacabina?</h1>
 				<p>Copacabina er en familiebedrift, startet i 2006, av fem
 					personer som ikke er i familie. Da grunnleggerne startet interessen for tur
@@ -57,41 +68,43 @@
 					tilby utleie av flotte hytter i vakre omgivelser, tilpasset til alle kunders
 					ønsker.</p>
 					<ul class="Styret">
-						<li><img src="Martin.jpg" alt="Martin" width="180" height="180">
+						<li><img src="Martin.jpg" alt="Bilde av daglig leder, Martin Langnes" width="180" height="180">
 							<span class="text-content"><span>Telefon<br><br>413 82 860<br><br>E-post<br><br>martin@copacabina.no</span></span>
 							<h2>Daglig leder</h2>
 							<h3>Martin Langnes</h3>
 						</li>
 						<li>
-							<img src="Susanne.jpg" alt="Susanne" width="180" height="180">
+							<img src="Susanne.jpg" alt="Bilde av bookingsansvarlig, Susanne Halleen" width="180" height="180">
 							<span class="text-content"><span>Telefon<br><br>469 48 764<br><br>E-post<br><br>susanne@copacabina.no</span></span>
 							<h2>Bookingsansvarlig</h2>
 							<h3>Susanne Halleen</h3>
 						</li>
 						<li>
-							<img src="Emilie.jpg" alt="Emilie" width="180" height="180">
+							<img src="Emilie.jpg" alt="Bilde av administrasjonskoordinator, Emilie Moe Gjerde" width="180" height="180">
 							<span class="text-content"><span>Telefon<br><br>934 46 354<br><br>E-post<br><br>emilie@copacabina.no</span></span>
-							<h2>Sekretær</h2>
+							<h2>Administrasjonskoordinator</h2>
 							<h3>Emilie Moe Gjerde</h3>
 						</li>
 						<li>
-							<img src="Gard.jpg" alt="Gard" width="180" height="180">
+							<img src="Gard.jpg" alt="Bilde av økonomiansvarlig, Gard Grøttan" width="180" height="180">
 							<span class="text-content"><span>Telefon<br><br>469 39 380<br><br>E-post<br><br>gard@copacabina.no</span></span>
 							<h2>Økonomiansvarlig</h2>
 							<h3>Gard Grøttan</h3>
 						</li>
 						<li>
-							<img src="Emil.jpg" alt="Emil" width="180" height="180">
+							<img src="Emil.jpg" alt="Bilde av vedlikeholdsansvarlig, Emil Eidesmo" width="180" height="180">
 							<span class="text-content"><span>Telefon<br><br>913 58 790<br><br>E-post<br><br>emil@copacabina.no</span></span>
 							<h2>Vedlikeholdsansvarlig</h2>
 							<h3>Emil Eidesmo</h3>
 						</li>
 					</ul>
+					<!--Listen viser bilder av bedriftens ansatte, deres stilling og kontraktinformasjon.
+					Her er det benyttet JavaScript for å få en elegant overgang til informasjonen
+					som vises ved å føre musen over bildene. Se Script neders i HTML-fil-->
 	</article>
-	<!-- Article 2 end -->
 
-	<!-- Article 3 start -->
 	<article id="article3">
+	<!--Sidens tredje artikkel gir kontaktinformasjon til bedriften-->
 		<h1>Slik kan du kontakte oss</h1>
 			<table>
 		  	<tr>
@@ -110,12 +123,12 @@
 			  </tr>
 			</table>
 	</article>
-	<!-- Article 3 end -->
 	</section>
-	<!-- JavaScript Includes -->
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
 	<script src="script.js"></script>
-	<!-- JavaScript slutter -->
+	<!--Scripten benyttes for "hover"-funksjon på sidens bilder, som gir en
+	elegant overgang til designet som kommer ved å føre musen over bildene-->
 </body>
 </html>
