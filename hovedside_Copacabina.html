@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Copacabina hytteutleie</title>
-	<link rel="stylesheet" href="text.css"/>
+	<link rel="stylesheet" href="hovedsideCSS.css"/>
 	<!--Link til sidens CSS-fil-->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<!--Font hentet fra googlefonts-->
@@ -20,19 +20,14 @@
 	<section id="page">
 	<!--Hele definert som en #page-section-->
 	<header>
-	<!--Sidens header og navigasjonsfelt-->
 		<nav class="clear">
-				<a href="hovedside.html">
-				<img src="CLogo.png" alt="Copacabina-logo og link til hovedside"></a>
-				<!--Nettstedets logo benyttes som en "hjem"-knapp som tar deg tilbake til hovedsiden-->
+				<a href="hovedside_Copacabina.html">
+				<img src="CLogo.png" alt="Copacabina-logo"></a>
 			<ul>
-				<li><a href="#article3" alt="Link til kontaktinformasjon">Kontakt</a></li>
-				<li><a href="#article2" alt="Link til info om bedriften">Om oss</a></li>
-				<li><a href="#article1" alt="Link til oversikt over hyttene">Hyttene</a></li>
-				<!--Sidens header tar deg til tre ulike steder på hovedsiden,
-				hvor de er definert som artikler med ulike id'er-->
+				<li><a href="hovedside_Copacabina.html #article3">Kontakt</a></li>
+				<li><a href="hovedside_Copacabina.html #article2 ">Om oss</a></li>
+				<li><a href="hovedside_Copacabina.html #article1">Hyttene</a></li>
 			</ul>
-		</nav>
 	</header>
 
 	<article id="article1">
@@ -42,16 +37,16 @@
 		<!--Forklaring på at det er mer informasjon å hente om hyttene ved å
 		klikke på bildene, slik at brukervennligheten blir høy og forståelig-->
 			<ul class="Hyttene">
-		      <li><a href="Hyttenr1.html">
+		      <li><a href="H1_Tommerhytta.html">
 						<img src="hytte1-8.jpg" alt="Bilde av Tømmerhytta. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Tømmerhytta</span></span></a></li>
-					<li><a href="Hyttenr2.html">
+					<li><a href="H2_Fjellparadiset.html">
 						<img src="hytte2-7.jpg" alt="Bilde av Fjellparadiset. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Fjellparadiset</span></span></a></li>
-					<li><a href="Hyttenr3.html">
+					<li><a href="H3_Sjoperla.html">
 						<img src="hytte3-1.jpg" alt="Bilde av Sjøperla. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Sjøperla</span></span></a></li>
-					<li><a href="Hyttenr4.html">
+					<li><a href="H4_Furutoppen.html">
 						<img src="hytte4-1.jpg" alt="Bilde av Furutoppen. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Furutoppen</span></span></a></li>
 				</ul>
@@ -134,5 +129,8 @@
 	<script src="script.js"></script>
 	<!--Scripten benyttes for "hover"-funksjon på sidens bilder, som gir en
 	elegant overgang til designet som kommer ved å føre musen over bildene-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="smoothscroll.js"></script>
+	<!--Scripten benyttes for å få en gradvis scrolling når du klikker på elementene i menyen-->
 </body>
 </html>
