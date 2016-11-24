@@ -56,7 +56,7 @@ Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepi
 .knapp
 {
   position: relative;
-  top: -450px;
+  top: -550px;
   font-size: 25px;
   border-radius: 10px; /*Runder av hjørnene til knappen*/
   background-color: #ff8080; /*Setter bakgrunnen til sterk oransje*/
@@ -69,6 +69,19 @@ Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepi
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-delay: 1s; /*Forsinker slik at animasjonen passer med siden*/
+}
+
+#tilbake
+{
+  position: relative;
+  top: -1610px;
+  left: -550px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #ff8080;
+  font-family: 'Open Sans', sans-serif;
+  width: 150px;
+  border-style: solid;
 }
 
 @-webkit-keyframes knappFade
@@ -92,10 +105,20 @@ Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepi
 {
   position: relative;
   width: 400px;
-  height: 300px;
+  height: 500px;
   text-align: center;
-  top: -800px;
+  top: -1100px;
   overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.radio
+{
+  white-space: pre-wrap;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 /*Fjerner pilene ved input-feltene som er av type nummer.
@@ -106,3 +129,24 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+#bekreft
+{
+  position: relative;
+  background-color: white;
+  width: 70%;
+  height: 400px;
+  top: -1600px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px;
+  font-family: 'Open Sans', sans-serif; /*Google font*/
+}
+
+#bekreft h1
+{
+  padding-top: 20px;
+}
+
+#bekreft hr{width: 70%;}
+
+#timer{opacity: 0;}

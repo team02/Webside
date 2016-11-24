@@ -11,3 +11,12 @@ $('.knapp').attr('disabled', 'disabled');
 setTimeout(function(){
   $('.knapp').removeAttr('disabled');
 }, sekund*2);
+
+
+Medlem: -15% avslag;
+Oppvarming: 500kr
+vasking: 500kr
+Tømmerhytte: 1699kr pr.natt
+Fjellparadiset: 2799kr pr.natt
+Sjøperla: 1500 pr.natt
+Furutoppen: 1250kr pr.natt
