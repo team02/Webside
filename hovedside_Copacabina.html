@@ -18,16 +18,20 @@
 
 <body>
 	<section id="page">
-	<!--Hele definert som en #page-section-->
+	<!--Hele siden definert som en #page-section-->
 	<header>
 		<nav class="clear">
 				<a href="hovedside_Copacabina.html">
 				<img src="CLogo.png" alt="Copacabina-logo"></a>
+				<!---Logo generert hos https://logomakr.com/-->
 			<ul>
 				<li><a href="hovedside_Copacabina.html #article3">Kontakt</a></li>
 				<li><a href="hovedside_Copacabina.html #article2 ">Om oss</a></li>
 				<li><a href="hovedside_Copacabina.html #article1">Hyttene</a></li>
+				<!---Alle sidene markert med en #, slik at man kan scrolle til gjeldene
+				sted på siden-->
 			</ul>
+		</nav>
 	</header>
 
 	<article id="article1">
@@ -124,6 +128,8 @@
 	</article>
 	</section>
 
+	<!---Alt script på siden er plasert nederst i HTML-fil, da det er lite brukt,
+	og er derfor ikke nødvendig å ha i egen fil-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
 	<script src="script.js"></script>

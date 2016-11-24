@@ -186,6 +186,21 @@ padding: 20px;
 	font-weight: bold;
 }
 
+#om_hytta img {
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+#om_hytta p {
+  font-family: 'Exo', sans-serif;
+  font-size: 18px;
+  width: 50%;
+  margin: 0 auto;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	text-align: center;
+}
+
 table {
   font-family: 'Exo', sans-serif;
   width: auto;
@@ -209,19 +224,8 @@ td, th {
 		border: 1px solid #e6e6e6;
 }
 
-#om_hytta p {
-  font-family: 'Exo', sans-serif;
-  font-size: 18px;
-  width: 50%;
-  margin: 0 auto;
-	margin-bottom: 25px;
-	margin-top: 10px;
-	text-align: center;
-}
-
-#om_hytta img {
-	width: 40%;
-	margin-bottom: 20px;
+table a {
+	text-decoration: underline;
 }
 
 #om_hytta iframe {
