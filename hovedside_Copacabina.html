@@ -2,12 +2,15 @@
 <!-- Copyright (C) 2016 by the authors of this document //-->
 <!-- This is an anonymous submission to be graded in a web development course //-->
 <!-- Team 02 BABED  //-->
-<!-- All inquiries about this document should be addressed to *** //-->
 <html lang="no">
+<!--Nettsidens språk defineres som norsk, slik at den kan fremvise norske
+særtegn som æ, ø og å-->
 
 <head>
 	<meta charset="utf-8">
 	<title>Copacabina hytteutleie</title>
+	<!--Sidens tittel defineres og er gjennomgående på nettstedet. Den kalles "Copacabina
+	hytteutleie", slik at vi får fremvist både firmanavn og type bedrift-->
 	<link rel="stylesheet" href="hovedsideCSS.css"/>
 	<!--Link til sidens CSS-fil-->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -24,12 +27,15 @@
 				<a href="hovedside_Copacabina.html">
 				<img src="CLogo.png" alt="Copacabina-logo"></a>
 				<!---Logo generert hos https://logomakr.com/-->
+				<!--Logo fungerer også som en hjem-knap-->
 			<ul>
-				<li><a href="hovedside_Copacabina.html #article3">Kontakt</a></li>
-				<li><a href="hovedside_Copacabina.html #article2 ">Om oss</a></li>
-				<li><a href="hovedside_Copacabina.html #article1">Hyttene</a></li>
-				<!---Alle sidene markert med en #, slik at man kan scrolle til gjeldene
+				<li><a href="hovedside_Copacabina.html #article3" class="smoothScroll">Kontakt</a></li>
+				<li><a href="hovedside_Copacabina.html #article2" class="smoothScroll">Om oss</a></li>
+				<li><a href="hovedside_Copacabina.html #article1" class="smoothScroll">Hyttene</a></li>
+				<!--Alle sidene markert med en #, slik at man kan scrolle til gjeldene
 				sted på siden-->
+				<!--De er også satt med "class="smoothScroll"", slik at de kobles opp mot
+				scriptet som forteller dem om å scrolle på en mer behagelig måte-->
 			</ul>
 		</nav>
 	</header>
@@ -128,15 +134,13 @@
 	</article>
 	</section>
 
-	<!---Alt script på siden er plasert nederst i HTML-fil, da det er lite brukt,
-	og er derfor ikke nødvendig å ha i egen fil-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
-	<script src="script.js"></script>
 	<!--Scripten benyttes for "hover"-funksjon på sidens bilder, som gir en
 	elegant overgang til designet som kommer ved å føre musen over bildene-->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="smoothscroll.js"></script>
 	<!--Scripten benyttes for å få en gradvis scrolling når du klikker på elementene i menyen-->
+	<!--Scriptet ligger i filen "smoothscroll.js"-->
 </body>
 </html>

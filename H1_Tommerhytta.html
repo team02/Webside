@@ -2,14 +2,21 @@
 <!-- Copyright (C) 2016 by the authors of this document //-->
 <!-- This is an anonymous submission to be graded in a web development course //-->
 <!-- Team 02 BABED  //-->
-<!-- All inquiries about this document should be addressed to *** //-->
 <html lang="no">
+<!--Nettsidens språk defineres som norsk, slik at den kan fremvise norske
+særtegn som æ, ø og å-->
+
 <head>
   <meta charset="utf-8">
 	<title>Copacabina hytteutleie</title>
+  <!--Sidens tittel defineres og er gjennomgående på nettstedet. Den kalles "Copacabina
+	hytteutleie", slik at vi får fremvist både firmanavn og type bedrift-->
 	<link rel="stylesheet" href="hyttesideCSS.css"/>
+  <!--Link til sidens CSS-fil. Samme CSS-fil et benyttet på samtlige hytter-->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <!--Font hentet fra googlefonts-->
 	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+  <!--Font hentet fra googlefonts-->
 </head>
 
 <body>
@@ -17,10 +24,15 @@
   		<nav class="clear">
   				<a href="hovedside_Copacabina.html">
   				<img src="CLogo.png" alt="Copacabina-logo"></a>
+          <!---Logo generert hos https://logomakr.com/-->
+          <!--Logo fungerer også som en hjem-knap-->
   			<ul>
   				<li><a href="hovedside_Copacabina.html #article3">Kontakt</a></li>
   				<li><a href="hovedside_Copacabina.html #article2">Om oss</a></li>
           <li><div class="dropdown"><button class="dropbtn">Hyttene</button>
+            <!--Her er det laget en dropdown meny med linker til alle hyttene,
+            slik at brukeren ikke trenger å gå tilbake til hovedsiden for å se
+            på resten av hyttene-->
               <div class="dropdown-content">
                 <a href="H1_Tommerhytta.html">Tømmerhytta </a>
                 <a href="H2_Fjellparadiset.html">Fjellparadiset </a>
@@ -32,50 +44,93 @@
   	</header>
 
 <article id="bilder">
+  <!--Alle bildene legges i samme artikkel, slik at blant annet bakgrunnen på
+  denne kan stilsettes likt på alle elementene i artikkelen-->
     <h1>Tømmerhytta</h1>
 
     <div class="slideshow-container">
+      <!--Diven settes for å ha en felles container på alle bildene i slideshowet-->
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-8.jpg" alt="Bilde av hytta fra utsiden" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-2.jpg" alt="Bilde av stue" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-3.jpg" alt="Hytta fra utsiden om vinteren" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-5.jpg" alt="Bilde fra soverom med køyeseng" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-6.jpg" alt="Bilde fra bad" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-1.jpg" alt="Bilde fra oppholdsrom" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-7.jpg" alt="Bilde av strand i nærområde" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-9.jpg" alt="Bilde fra området om vinteren" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <div class="mySlides fade">
+        <!--Det settes en div-classe på alle bildene i slideshowet, slik at
+        alle disse får samme animasjon-->
         <img src="hytte1-10.jpg" alt="Utsiktsbilde fra området" style="width:100%">
+        <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+        mer brukervennlig for alle-->
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!--Det hentes inn knapper i slideshowet, slik at brukeren kan navigere
+      seg mellom bildene-->
     </div>
 
     <div style="text-align:center">
+      <!--Det legges inn en div for "dottene" som vises under bildene. Dette gir
+      brukeren en mulighet til å hoppe til ønsket bilde i rekken-->
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
@@ -85,14 +140,18 @@
       <span class="dot" onclick="currentSlide(7)"></span>
       <span class="dot" onclick="currentSlide(8)"></span>
       <span class="dot" onclick="currentSlide(9)"></span>
-
     </div>
-  </div>
+  </article>
 
 <article id="om_hytta">
 
   <h2>Info om utleiestedet</h2>
-    <img src="tommerhytta.png" alt="Oversikt over hyttas fasiliteter">
+
+  <img src="tommerhytta.png" alt="Oversikt over hyttas fasiliteter">
+  <!--Her er det lagt inn et bilde som fremviser hovedfasilitetene i hytten.
+  Dette er inspirert av den samme funksjonen som Airbnb benytter-->
+  <!--Det settes en alt-beskrivelse på alle bildene, slik at siden blir
+  mer brukervennlig for alle-->
 
   <p>Oppdal er en naturperle og hytta er et perfekt utgangspunkt for
     opplevelser både sommer og vinter. Langrennsløypene starter ved hytta
@@ -101,8 +160,11 @@
     På sommeren tilbyr Trollheimen utallige flotte turmuligheter. Hytta
     er laget i hundre år gammelt laftet tømmer og ligger skjermet innerst
     i en blindvei og gir virkelig den genuine hyttefølelsen.</p>
+    <!--I dette p-elementet legges det inn en mer detaljert beskrivelse av hytta-->
 
   <table>
+    <!--Det lages en tabell som gir brukeren en enkel og grei oversikt over hyttas
+    fasiliteter, priser, soverom og lenker til aktiviteter i området-->
     <tr>
       <th>Fasiliteter</th>
       <th>Priser</th>
@@ -142,15 +204,22 @@
   </table>
 
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1835.4467931433387!2d9.66544515168512!3d62.58275796495086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46135401a30eac93%3A0xf1af3aa868b80384!2sDovrevegen+40%2C+7340+Oppdal!5e0!3m2!1sno!2sno!4v1479824215424"frameborder="0" style="border:0" allowfullscreen></iframe>
+  <!--Her er det lagt inn kart over hyttens lokasjon. Dette er en funksjon som
+  er hentet gjennom GoogleMaps-->
 
   <div id="yr">
+    <!--Her legges det inn en div for yr-værvarsling fra området, slik at den kan
+    stilsettes på samme måte som alle andre elementene på siden. Den måtte lages
+    en egen id på, da det er flere script-elementer på siden-->
     <script src="http://www.yr.no/sted/Norge/Sør-Trøndelag/Oppdal/Oppdal/ekstern_boks_stripe.js">
     </script><noscript>
     <a href="http://www.yr.no/sted/Norge/Sør-Trøndelag/Oppdal/Oppdal/">yr.no: Værvarsel for Oppdal</a>
-  </noscript>
+    </noscript>
   </div>
 
-<button id='bestill'><a href="hovedside.html">Bestill</a></button>
+  <button id='bestill'><a href="hovedside.html">Bestill</a></button>
+  <!--Knapp som tar brukeren inn på bookingsiden. Knappen på teksten er
+  "Bestill", slik at det er klart og tydelig hvilken funksjon den har-->
 
 </article>
 
@@ -182,6 +251,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
+<!--Scriptet på hyttesidene ligger i samme fil som HTML. Dette er fordi det kun
+ble benyttet script i slideshowet, og dette var så lite at det ikke ble vurdert
+som nødvendig å ha dette i en egen fil-->
 </body>
 </html>

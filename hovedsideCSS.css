@@ -3,22 +3,27 @@ body{
 	font-family: 'Exo', sans-serif;
 }
 
-/*Stilsetting på navigasjonsmeny starter*/
 nav{
 	background: white;
 	position:fixed;
 	width: 100%;
 	top: 0;
+	/*Navigasjonsmenyen settes til øverst i dokumentet og fixed, slik at det følger
+	brukeren rundt på siden og det er tydelig at dette elementet brukes til
+	navigasjon*/
 	font-family: 'Exo', sans-serif;
 	z-index:1000;
+	/*z-indeksen defineres til 1000, slik at elementet alltid er på toppen av siden*/
 	color: black;
 	opacity: 0;
+	/*Opacity satt til 0, slik at elementet fremviser etter animasjonen*/
 	-webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-fill-mode: forwards;
+	/*Animasjon er lagt inn skil at elementene på siden gradvis fremvises når den åpnes*/
 }
 
-nav ul li  {
+nav ul li{
 	display:inline;
 	margin-right: 5%;
 	margin-top: 1.3%;
@@ -27,6 +32,8 @@ nav ul li  {
 	font-weight:bold;
 	text-transform:uppercase;
 	text-decoration: none;
+	/*Listen, eller linkene, i navigasjonsmenyen stilsettes og plasseres til høyre
+	i menyen*/
 }
 
 nav ul li a {
@@ -36,26 +43,28 @@ nav ul li a {
 
 nav ul li a:hover{
 	text-decoration: overline;
+	/*Når man tar pilen over de ulike linkene i navigasjonsmenyen, markeres dette
+	med en overline, slik at det klargjøres hvilket element som er aktivt ved
+	at pilen er over det og at det tydeliggjøres at de kan klikkes på*/
 	color: black;
 }
 
-nav img {
+nav img{
 	float: left;
 	height: 7%;
 	width: 7%;
 	margin-top: 1%;
 	margin-left: 1%;
 	margin-bottom: 1%;
+	/*Copacabina sin logo plasseres øverst i høyre hjørne, slik at den alltid er
+	synlig og at det er naturlig at denne også fungerer som en hjem-knapp*/
 }
-/*Stilsetting på navigasjonsmeny slutter*/
 
-/* Stilsetting på artikler starter */
 article{
 	padding: 10px;
 	/*Paddingen defineres for alle artikler, slik at det er mer ryddig på siden*/
 }
 
-/*Stilsetting på artikkel 1 - Hyttene starter*/
 #article1{
 	margin-top: 100px;
 	/*Artikkelen settes med 100px margin fra toppen, slik at den kommer under
@@ -67,10 +76,12 @@ article{
 	text-align: center;
 	color: white;
 	opacity: 0;
+	/*Opacity satt til 0, slik at elementet fremviser etter animasjonen*/
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-delay: 0.5s;
+	/*Animasjon er lagt inn skil at elementene på siden gradvis fremvises når den åpnes*/
 }
 
 #article1 h1{
@@ -88,10 +99,12 @@ ul.Hyttene{
 	list-style-type: none;
 	padding: 2%;
 	margin: 0 auto;
+	/*Margin settes som 0 auto, slik at de alltid plasseres midt på siden*/
 }
 
 ul.Hyttene img{
 	border-radius: 15px;
+	/*Radiusen på bildene settes til 15px, slik at de får litt avrunnete hjørner*/
 }
 
 ul.Hyttene li{
@@ -107,6 +120,7 @@ span.text-content1 span{
   display: table-cell;
   text-align: center;
   vertical-align: bottom;
+	/*Teksten plasseres i midten av bildene og på bunnen*/
 }
 
 span.text-content1{
@@ -116,6 +130,7 @@ span.text-content1{
   position: absolute;
   top: 0;
   width: 300px;
+	/*Innholdet settes til samme størrelse på alle elementene*/
 }
 
 ul.Hyttene li:hover span.text-content1{
@@ -133,10 +148,10 @@ span.text-content1{
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 	border-radius: 15px;
+	/*Stilsettingen definerer at teksten på bildet endrer seg med opacity når man
+	beveger pilen over*/
 }
-/*Stilsetting på artikkel 1 - Hyttene slutter*/
 
-/*Stilsetting på artikkel 2 - Om Copacabina starter*/
 #article2{
 	background-color: white;
 }
@@ -165,10 +180,12 @@ ul.Styret{
 	padding: 2%;
 	text-align: center;
 	width: auto;
+	/*Vidden på listen defineres som auto, slik at den justerer seg etter innholdet*/
 }
 
 ul.Styret img{
 	border-radius: 20px;
+	/*Radiusen setttes til 20px, slik at bildene får avrunnete hjørner*/
 }
 
 ul.Styret li{
@@ -177,16 +194,20 @@ ul.Styret li{
 	margin: 0 1em 1em 0;
 	position: relative;
 	width: 180px;
+	/*Høyden og vidden settes til samme som bildene*/
 }
 
 span.text-content span{
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+	/*Teksten stilles inn på midten av bildene*/
 }
 
 ul.Styret li:hover span.text-content{
   opacity: 0.8;
+	/*Opacity starter når man tar pilen over bildene, slik at mer info om de
+	ansatte fremvises*/
 }
 
 span.text-content{
@@ -205,14 +226,13 @@ span.text-content{
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 	border-radius: 20px;
+	/*Teksten over bildet er innstilt på å kun fremvises når pilen er over dem*/
 }
-/*Stilsetting på artikkel 2 - Om Copacabina slutter*/
 
-/*Stilsetting på artikkel 3 - Kontakt starter*/
 #article3{
 	  background-image: url("tur.jpg");
-		background-size: 100%;
 		/*Ikke nødvendig med alt-beskrivelse av bildet, da det kun fungerer som bakgrunn*/
+		background-size: 100%;
 }
 
 #article3 h1{
@@ -225,25 +245,32 @@ span.text-content{
 }
 
 table{
-    font-family: 'Exo', sans-serif;
-    width: 100%;
-    font-size: 15px;
-    background: #f2f2f2;
-    border: none;
-    position: relative;
-    margin: 0 auto;
-		border-radius: 25px;
-		text-align: center;
-		padding: 15px;
+  font-family: 'Exo', sans-serif;
+  width: 100%;
+	/*Tabellen instilles med vidde som er like stor som siden, slik at den virker
+	som en footer. Den er dog ikke valgt som footer, ettersom vi ikke så behovet
+	for at dette skulle gå igjen på alle sidene på nettstedet*/
+  font-size: 15px;
+  background: #f2f2f2;
+  border: none;
+  position: relative;
+  margin: 0 auto;
+	border-radius: 25px;
+	/*Radius er også satt slik at dette elementet blir avrunnet, slik at stilsettingen
+	samsvarer med sidens andre elementer*/
+	text-align: center;
+	padding: 15px;
 }
 
 th{
   font-weight: bolder;
+	/*headeren settes med tykkere skrift enn resten av tabellen, for å markere
+	at disse er overskrifter*/
 	padding: 13px;
 }
-/*Stilsetting på artikkel 3 - Kontakt starter*/
-/* Stilsetting på artikler slutter */
-@-webkit-keyframes fade {
+
+@-webkit-keyframes fade{
   from{opacity: 0;}
   to{opacity: 1;}
+	/*Webkit som gjør det mulig at elementene "fades" inn*/
 }

@@ -1,4 +1,4 @@
-body {
+body{
 	font-family: 'Exo', sans-serif;
 }
 
@@ -7,16 +7,22 @@ nav{
 	position:fixed;
 	width: 100%;
 	top: 0;
+	/*Navigasjonsmenyen settes til øverst i dokumentet og fixed, slik at det følger
+	brukeren rundt på siden og det er tydelig at dette elementet brukes til
+	navigasjon*/
 	font-family: 'Exo', sans-serif;
 	z-index:1000;
+	/*z-indeksen defineres til 1000, slik at elementet alltid er på toppen av siden*/
 	color: black;
 	opacity: 0;
+	/*Opacity satt til 0, slik at elementet fremviser etter animasjonen*/
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-fill-mode: forwards;
+	/*Animasjon er lagt inn skil at elementene på siden gradvis fremvises når den åpnes*/
 }
 
-nav ul li  {
+nav ul li{
 	display:inline;
 	margin-right: 5%;
 	margin-top: 1.3%;
@@ -25,27 +31,34 @@ nav ul li  {
 	font-weight:bold;
 	text-transform:uppercase;
 	text-decoration: none;
+	/*Listen, eller linkene, i navigasjonsmenyen stilsettes og plasseres til høyre
+	i menyen*/
 }
 
 nav ul li a:hover{
 	text-decoration: overline;
+	/*Når man tar pilen over de ulike linkene i navigasjonsmenyen, markeres dette
+	med en overline, slik at det klargjøres hvilket element som er aktivt ved
+	at pilen er over det og at det tydeliggjøres at de kan klikkes på*/
 }
 
-nav img {
+nav img{
 	float: left;
 	height: 7%;
 	width: 7%;
 	margin-top: 1%;
 	margin-left: 1%;
 	margin-bottom: 1%;
+	/*Copacabina sin logo plasseres øverst i høyre hjørne, slik at den alltid er
+	synlig og at det er naturlig at denne også fungerer som en hjem-knapp*/
 }
 
-nav .dropdown {
+nav .dropdown{
     position: relative;
     display: inline-block;
 }
 
-nav .dropbtn {
+nav .dropbtn{
 	background-color: white;
   font-family: 'Exo', sans-serif;
   border: none;
@@ -54,45 +67,63 @@ nav .dropbtn {
 	font-size:20px;
 	font-weight:bold;
 	text-transform:uppercase;
+	/*Linken over dropdown-menyen får samme stilsetting som resten av elementene*/
 }
 
 nav .dropbtn:hover{
 	text-decoration: overline;
+	/*Når man tar pilen over de ulike linkene i navigasjonsmenyen, markeres dette
+	med en overline, slik at det klargjøres hvilket element som er aktivt ved
+	at pilen er over det og at det tydeliggjøres at de kan klikkes på*/
 }
 
-nav .dropdown-content {
-	  background-color: rgba(255, 255, 255, .4);
-    display: none;
-    position: absolute;
-		margin-top: 25px;
-		padding: 15px;
-		text-align: left;
-		font-size: 19px;
-		font-weight: lighter;
-		border-radius: 25px;
-		text-transform: lowercase;
+nav .dropdown-content{
+	/*Elementene i dropdown-menyen får en annen stilsetting enn "hovedoverskriftene"*/
+  background-color: rgba(255, 255, 255, .4);
+	/*Bakgrunnsfargen settes som gjennomsiktig, slik at brukeren fortsatt kan se
+	resten av siden*/
+  display: none;
+	/*Display settes som "none", slik at dette ikke fremvises før man "hovrer"
+	over bildene*/
+  position: absolute;
+	margin-top: 25px;
+	padding: 15px;
+	text-align: left;
+	font-size: 19px;
+	font-weight: lighter;
+	border-radius: 25px;
+	text-transform: lowercase;
+	/*Settes som lowercase, slik at det tydeliggjøres at dette er underelementer til
+	"Hyttene" som står i uppercase*/
 }
 
-nav .dropdown-content a:hover {
+nav .dropdown-content a:hover{
 	text-decoration: none;
 	font-weight: bolder;
+	/*Når man beveger pilen over elementene i dropdown-menyen blir de bold, slik
+	at det er tydelig hvilken man er på vei til å klikke på*/
 }
 
-nav .dropdown:hover .dropdown-content {
-    display: block;
+nav .dropdown:hover .dropdown-content{
+  display: block;
+	/*Her settes hover-funksjonen til at display blir block og elementene vises
+	når pilen føres over linken*/
 }
 
-#bilder {
+#bilder{
   text-align: center;
 	background-image: url("natur.jpg");
+	/*Bakgrunnsbilde har ingen "alt", da det kun har funksjon som bakgrunn for syns skyld*/
 	opacity: 0;
+	/*Opacity satt til 0, slik at elementet fremviser etter animasjonen*/
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-delay: 0.5s;
+	/*Animasjon er lagt inn skil at elementene på siden gradvis fremvises når den åpnes*/
 }
 
-#bilder h1 {
+#bilder h1{
   font-family: 'Pacifico', cursive;
   font-size: 55px;
   margin-top: 110px;
@@ -100,22 +131,24 @@ nav .dropdown:hover .dropdown-content {
 	margin-bottom: 10px;
 }
 
-/* Slideshow container */
-.slideshow-container {
+.slideshow-container{
 	margin: 0 auto;
   position: relative;
 	width: 50%;
+	/*Vidden på slideshow settes som 50%, slik at det ikke dekker hele siden*/
 	margin-bottom: 10px;
 }
 
-.slideshow-container img {
+.slideshow-container img{
 	  max-width: 900px;
 		max-height: 500px;
+		/*Bildene i slideshowet stilsettes, slik at disse holder seg innenfor
+		gitte rammer og ikke tar mer/mindre plass grunnet originalstørrelse*/
 }
 
-/* Next & previous buttons */
-.prev, .next {
+.prev, .next{
   cursor: pointer;
+	/*Pilen endrer stil for å klargjøre at de kan trykkes på*/
   position: absolute;
   top: 45%;
   padding: 15px;
@@ -125,23 +158,27 @@ nav .dropdown:hover .dropdown-content {
   transition: 0.6s ease;
 }
 
-/* Position the "next button" to the right */
-.next {
+.next{
   right: 0;
+	/*Neste bilde-knappen settes helt til høyre i containeren, slik at den fremviser
+	hvilken retning du tar ved å klikke på den*/
 }
 
-.prev {
+.prev{
   left: 0;
+	/*Forrige bilde-knappen settes helt til venstre i containeren, slik at den fremviser
+	hvilken retning du tar ved å klikke på den*/
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover{
   font-size: 50px;
+	/*font.størrelsen på bildene blir større når man tar pilen over dem, for å
+	tydeliggjøre at de kan klikkes på*/
 }
 
-/* The dots/bullets/indicators */
-.dot {
+.dot{
   cursor: pointer;
+	/*Pilen endres for å klargjøre at man kan klikke på dottene*/
   height: 20px;
   width: 20px;
 	background-color: #ffb3b3;
@@ -150,35 +187,39 @@ nav .dropdown:hover .dropdown-content {
 	margin-bottom: 10px;
 }
 
-.active, .dot:hover {
+.active, .dot:hover{
   background-color: #ff8080;
+	/*Bakgrunnsfargen på dotten som gjelder for hvilket bilde du er på, gjøres mørkere*/
 }
 
-/* Fading animation */
-.fade {
+.fade{
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+	/*Fade-animasjonen defineres*/
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade{
   from {opacity: .4}
   to {opacity: 1}
+	/*Webkit som gjør det mulig at elementene "fades" inn*/
 }
 
-@keyframes fade {
+@keyframes fade{
   from {opacity: .4}
   to {opacity: 1}
+	/*Webkit som gjør det mulig at elementene "fades" inn*/
 }
 
-#om_hytta {
+#om_hytta{
 background: white;
 text-align: center;
 padding: 20px;
+/*Alle elementene, bortsett fra slideshowet stilsettes i diven #om_hytta*/
 }
 
-#om_hytta h2 {
+#om_hytta h2{
   font-family: 'Exo', sans-serif;
   font-size: 40px;
 	text-decoration: overline;
@@ -186,24 +227,26 @@ padding: 20px;
 	font-weight: bold;
 }
 
-#om_hytta img {
+#om_hytta img{
 	width: 40%;
 	margin-bottom: 20px;
 }
 
-#om_hytta p {
+#om_hytta p{
   font-family: 'Exo', sans-serif;
   font-size: 18px;
   width: 50%;
+	/*Vidden på teksten settes til 50%, slik at det ikke dekker hele siden*/
   margin: 0 auto;
 	margin-bottom: 25px;
 	margin-top: 10px;
 	text-align: center;
 }
 
-table {
+table{
   font-family: 'Exo', sans-serif;
   width: auto;
+	/*Tabellens vidde instilles automatisk til plassen elementene behøver*/
   font-size: 14px;
   background: #f2f2f2;
   position: relative;
@@ -212,56 +255,68 @@ table {
 	text-align: center;
 }
 
-th {
+th{
   font-weight: bolder;
 	text-transform: uppercase;
 	background-color: #e6e6e6;
+	/*Headeren i tabellen får ulik stilsetting enn resten av elementene,
+	og på den måten gjøres det tydelig at dette er de ulike kategoriene*/
 }
 
-td, th {
-    text-align: center;
-    padding: 8px;
-		border: 1px solid #e6e6e6;
+td, th{
+  text-align: center;
+  padding: 8px;
+	border: 1px solid #e6e6e6;
 }
 
-table a {
+table a{
 	text-decoration: underline;
+	/*Lenkene i tabellen markeres med understrek, slik at det er tydelig at de kan
+	klikkes på*/
 }
 
-#om_hytta iframe {
+#om_hytta iframe{
 	width: 70%;
+	/*Kartet fra googleMaps settes som 70%, slik at det ser fint ut i forhold til
+	resterende elementer på siden*/
 }
 
 #yr{
  text-align: center;
  text-decoration: underline;
+ /*Yr.no-linken sentreres på lik linje med andre elementer, men merkes med
+ understrek, slik at man skjønner at den kan klikkes på*/
+ /*Her ble det gjort et bevisst valg på å ikke ta med værbeskrivelse som var
+ større og med bilder, da dette ikke passet inn på nettstedets enkle og stilrene design*/
 }
 
-#bestill {
+#bestill{
 	width: 200px;
 	padding: 20px;
 	cursor: pointer;
+	/*Pilen endres når man har den over knappen, slik at det er tydelig at denne
+	kan klikkes på*/
 	font-weight: bolder;
 	font-size: 15px;
 	background: #ff8080;
 	border: none;
 	border-radius: 10px;
+	/*Dette gjør at knappen blir avrundet, og hjørnene ikke blir for skarpe*/
 	font-family: 'Exo', sans-serif;
 	text-transform: uppercase;
 	position: relative;
 	margin: 0 auto;
 }
 
-a, a:visited {
+a, a:visited{
   text-decoration: none;
   color: black;
+	/*Det defineres at linken på knappen ikke skal bytte farge eller stil når den
+  har blitt klikket på*/
 }
 
-#bestill:hover {
+#bestill:hover{
 background: #ffb3b3;
-}
-
-@-webkit-keyframes fade {
-  from{opacity: 0;}
-  to{opacity: 1;}
+/*Bakgrunnsfargen på knappen settes til litt lysere ved "hover", slik at det
+blir klart og tydelig når den er aktiv*/
 }
