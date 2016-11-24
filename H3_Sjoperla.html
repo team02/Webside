@@ -223,7 +223,7 @@ særtegn som æ, ø og å-->
       yr.no: Værvarsel for Kristiansand</a></noscript>
   </div>
 
-  <button id='bestill'><a href="hovedside.html">Bestill</a></button>
+  <button id='bestill'><a href="booking_Copacabina.html">Bestill</a></button>
   <!--Knapp som tar brukeren inn på bookingsiden. Knappen på teksten er
   "Bestill", slik at det er klart og tydelig hvilken funksjon den har-->
 </article>
@@ -240,20 +240,20 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+function showSlides(n) { /*Funksjon for slideshow*/
+  var i; /*Variabel i som angir lengden på slideshow*/
+  var slides = document.getElementsByClassName("mySlides"); /*Henter inn mySlides og lager objekt*/
+  var dots = document.getElementsByClassName("dot"); /*Henter inn dot og lager objekt*/
+  if (n > slides.length) {slideIndex = 1} /*Så lenge verdi n er større enn lengden på slideshowet, sett slideindex til 1 (begynner på nytt)*/
+  if (n < 1) {slideIndex = slides.length} /*Om verdi n er mindre, sett slideshow til lengden */
+  for (i = 0; i < slides.length; i++) { /*For-løkke som legger til verdi på i for hver gang i er mindre enn lengden på slideshow*/
+      slides[i].style.display = "none"; /*Endred CSS verdi display til none*/
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  for (i = 0; i < dots.length; i++) { /*For løkke som legger til verdi på i for hver gang i er mindre enn lengden på slideshow*/
+      dots[i].className = dots[i].className.replace(" active", ""); /*Endres CSS stil slik at dot'ene andrer utseende avhengig av hvilket bilde som vises*/
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex-1].style.display = "block"; /*CSS attributt for display*/
+  dots[slideIndex-1].className += " active"; /*CSS attributt som forteller hvilken CSS-blokk den skal samsvare med*/
 }
 </script>
 <!--Scriptet på hyttesidene ligger i samme fil som HTML. Dette er fordi det kun

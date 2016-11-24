@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Ekstern CSS-fil-->
+    <link rel = 'stylesheet' href = 'bookingCSS.css'>
+
+    <!--jQuery og jQuery UI bibliotek for å forenkle enkelete element-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+    <!--Ekstern css-fil slik at kalenderen ser bra ut-->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <!--Ekstern javascript-fil-->
+    <script src = 'Booking-script.js'></script>
+
+    <!--Import av google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+
+    <title>Booking</title>
+  </head>
+  <body>
+    <a href="introside_Copacabina.html"><img src="CLogo.png" alt="Copacabina-logo"></a>
+
+  <center> <!--Selv om center tag er lite brukt og misslikt, velger vi å bruke dette fordi den sparer mye tid og arbeid-->
+
+  <!--Deklarerer form-->
+  <form action="action_page.php">
+  <div id = 'boks' class = 'boks'>
+  <!--Selector for å velge hytte-->
+    <select name="Velg hytte" id = 'hytteValgt'>
+      <option value = 'ingenValgt' disabled selected>Velg ei hytte </option>
+      <option value="Tømmerhytta (1699 kr pr.natt)">Tømmerhytta</option>
+      <option value="Fjellparadiset (2799 kr pr.natt)">Fjellparadiset</option>
+      <option value="Sjøperla (1500 kr pr.natt)">Sjøperla</option>
+      <option value="Furutoppen (1250 kr pr.natt)">Furutoppen</option>
+    </select><br>
+
+    <!--De forskjellige input typene for bestillingen.-->
+    <input id = 'innDato' type = 'text' class = 'datovelger' placeholder = 'Innsjekkingsdato'/>
+    <input id = 'utDato' type = 'text' class = 'datovelger'placeholder = 'Utsjekkingsdato'/>
+    <input id = 'timer' type = 'number' placeholder = 'Antall timer'/>
+  </div>
+
+  <!--Andre valideringsboks-->
+  <div id = 'boks2' class = 'boks'>
+      <input id = 'fulltNavn' type = 'text' name = 'navn' placeholder = 'Fullt navn'/>
+      <input id= 'telefon' type = 'number' name = 'telefon' placeholder = 'Telefonnummer'/>
+      <input id = 'antPers' type = 'number' name = 'ant_pers' placeholder = 'Antall personer'/>
+      <input id= 'email' type = 'email' name = 'email' placeholder = 'Email'/>
+  </div>
+
+<!--Tredje valideringsboks-->
+  <div id = 'boks3' class = 'boks'>
+    <Select name = 'betalingsmetode' id = 'betalingsmaate'>
+      <option value = 'ingenValgt' disabled selected>Velg betalingsmetode</option>
+      <option value = 'Visa'>Visa</option>
+      <option value = 'faktura'>Faktura</option>
+    </select><br>
+
+    <input  id = 'kontonummer' type = 'number' name = 'kontonummer' placeholder = 'Kontonummer'/>
+    <input id = 'faktura' type = 'text' name = 'faktura' placeholder = 'Merk faktura'/>
+
+  <div id = 'medlem'>
+    <p class = radio>Er du medlem?</p>
+    <input type = 'radio' value = 'er medlem, og gis derfor 15 % rabatt' name = 'gruppe1'>Ja</input>
+    <input type = 'radio' value = 'er ikke medlem, og gis dessverre ingen rabatt' name = 'gruppe1'>Nei</input>
+  </div>
+
+  <div id = 'oppvarming'>
+    <p class = radio>Ønsker du oppvarmet hytte?</p>
+    <input type = 'radio' value = 'Ønsker oppvarmet hytte (500 kr)' name = 'gruppe2'>Ja</input>
+    <input type = 'radio' value = 'Ønsker ikke oppvarmet hytte (0 kr)' name = 'gruppe2'>Nei</input>
+  </div>
+
+  <div id = 'vasking'>
+    <p class = radio> Ønsker du vasking?</p>
+    <input type = 'radio' value = 'Ønsker vasking av hytte (500 kr)' name = 'gruppe3'>Ja</input>
+    <input type = 'radio' value = 'Ønsker ikke vaskig av hytte (0 kr)' name = 'gruppe3'>Nei</input>
+  </div>
+
+  </div>
+
+  <!--Knapp som skal dytte skjemaet ut av skjermen og vise nytt skjema-->
+  <button class = 'knapp' type = 'button'>Videre</button>
+
+</center>
+</form>
+<center>
+<div id = 'bekreft'>
+  <h1>Du har bestilt følgende</h1>
+  <hr>
+  <p id = 'bestilt'></p>
+</div>
+
+<button type = 'button' id = 'tilbake'>Tilbake</button>
+</center>
+  </body>
+</html>

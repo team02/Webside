@@ -104,6 +104,8 @@ $(document).ready(function(){
         $('#timer').css('background-color', 'white'); /*Endrer bakgrunn for tekstfelt til hvit*/
       } else if($('#timer').prop('disabled') == false && innDato === utDato && $('#timer').val() > 6){ /*Sjekker om felt for timer er diabled, om innsjekkingsdato er lik utsjekkingsdato og om timer er over 6 timer*/
         alert('Om du skal leie en hytte i mer enn 6 timer må du leie for et helt døgn');/*Feilmelding*/
+      } else if($('#timer').val() == '' && innDato == utDato){
+        alert('Vennligst velg hvor mange timer hytten skal leies');
       } else {
 
         /*Deaktiver knapp i 2 sekunder slik at brukeren ikke kan hoppe over neste skjema.*/
@@ -116,7 +118,7 @@ $(document).ready(function(){
         Om stop() ikke brukes, vil animasjonene vente i 1-2 sekunder
         og de vil kollidere.*/
         /*Rull videre til neste validering*/
-        $(boks).stop().animate({left: '800px'}, sekund);
+        $(boks).stop().animate({left: '1200px'}, sekund);
         $(boks2).stop().animate({top: '-150px'}, sekund);
         $('#tilbake').stop().animate({top: '-1500px'}, sekund); /*Tilbakeknapp*/
 
@@ -162,7 +164,7 @@ $(document).ready(function(){
           /*Bruker .stop() slik at animasjonene begynner umiddelbart.
           Om stop() ikke brukes, vil animasjonene vente i 1-2 sekunder
           og de vil kollidere.*/
-          $(boks2).stop().animate({left: '900px'}, sekund);
+          $(boks2).stop().animate({left: '1200px'}, sekund);
           $(boks3).stop().animate({top: '-550px'}, sekund);
 
 
@@ -256,11 +258,20 @@ $(document).ready(function(){
             totalPris = Math.round((totalPris*0.85));
           }
 
+          var sumTid = '';
+
+          if (innDato != utDato){
+            sumTid = ' som du leier fra den ' + innDato + ' til den ' + utDato;
+          } else{
+            sumTid = ' som du leier i ' + $('#timer').val() + ' time(r)';
+            totalPris = Math.round((totalPris/24) * $('#timer').val() + 500);
+          }
+
           /*Viser bruker hva han/hun har bestilt*/
           $('#bestilt').html(
 
 
-            'Hei ' + navn + '! Du er i ferd med å leie ' + typHytte + ' som du leier fra den ' + innDato + ' til den ' + utDato + ' for ' + persAnt + ' personer.'
+            'Hei ' + navn + '! Du er i ferd med å leie ' + typHytte + sumTid +' for ' + persAnt + ' personer.'
             + '<br><br> Du har i tillegg valgt:<br><br>'
             + oppvarming + '<br>'
             + vasking + '<br>'
@@ -277,5 +288,4 @@ $(document).ready(function(){
         window.location.replace('kvittering.html'); /*Åpne siden for kvittering*/
       }
     }); /*Klikk-funksjon*/
-    console.log($('#timer').val());
   }); /*Document.ready*/

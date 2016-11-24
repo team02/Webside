@@ -2,6 +2,7 @@ body
 {
   background-image: url('kayak.jpeg');
   overflow: hidden;
+  font-family: font-family: 'Exo', sans-serif;
 }
 
 #kvittering
@@ -17,7 +18,7 @@ body
 h1
 {
   font-size: 40px;
-  color: green;
+  color: #ff8080;
 }
 
 hr
@@ -30,22 +31,13 @@ p
   font-size: 20px;
 }
 
+a
+{
+  font-size: 30px;
+  color: #ff8080;
+}
+
 #referanse
 {
   font-size: 30px;
-}
-
-#flagg{background-image: url('eng.png');}
-#nflagg{background-image: url('nor.jpg');}
-
-.spraak
-{
-  border-radius: 20px;
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  background-size: cover;
-  background-repeat: round;
-  display: inline-block;
-  margin: 5px;
 }

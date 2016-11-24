@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kvittering</title>
+    <link rel='stylesheet' href = 'kvitteringCSS.css'>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+  </head>
+  <body>
+    <center>
+    <div id = 'kvittering'>
+      <h1 id = 'overskrift'>Takk for din bestilling!</h1>
+      <hr>
+      <h3 id = 'underskrift1'>Takk for at du valgte å bestille hos oss på Copa Cabina!</h3><br>
+             <p id = 'tekst'>Vi håper du kommer til å trives på din bestilte hytte og <br>at du får et godt opphold.
+             Om det skulle være noen spørsmål eller andre henvendelser,<br> kontakt oss gjerne på telefon eller epost.</p>
+             <h3 id = 'underskrift2'>Under vil du finne din referansekode.</h3><br>
+             <p id = 'referanse'></p>
+             <a href="introside_Copacabina.html">Klikk her for å returnere til forsiden</a>
+    </div>
+</center>
+  </body>
+
+  <!--Velger å sette javascript rett inn i html grunnet av at koden er liten-->
+  <script>
+
+
+    var tekst = '';
+    var muligheter = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789' //Tegn koden kan bestå av
+
+    for (var i = 0; i < 6; i++) /*For-løkke som går skriver så lenge koden er under seks tegn*/
+    tekst += muligheter.charAt(Math.floor(Math.random() * muligheter.length)); /*Velger tilfeldige tall*/
+    document.getElementById('referanse').innerHTML = '#' + tekst; /*Legger til et hashtag før koden.Erstatter referanse-innhold med koden*/
+
+
+  </script>
+</html>

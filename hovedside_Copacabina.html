@@ -29,9 +29,9 @@ særtegn som æ, ø og å-->
 				<!---Logo generert hos https://logomakr.com/-->
 				<!--Logo fungerer også som en hjem-knap-->
 			<ul>
-				<li><a href="hovedside_Copacabina.html #article3" class="smoothScroll">Kontakt</a></li>
-				<li><a href="hovedside_Copacabina.html #article2" class="smoothScroll">Om oss</a></li>
-				<li><a href="hovedside_Copacabina.html #article1" class="smoothScroll">Hyttene</a></li>
+				<li><a href="#article3" id="ss">Kontakt</a></li>
+				<li><a href="#article2" id="ss2">Om oss</a></li>
+				<li><a href="#article1" id="ss3">Hyttene</a></li>
 				<!--Alle sidene markert med en #, slik at man kan scrolle til gjeldene
 				sted på siden-->
 				<!--De er også satt med "class="smoothScroll"", slik at de kobles opp mot
@@ -60,7 +60,8 @@ særtegn som æ, ø og å-->
 						<img src="hytte4-1.jpg" alt="Bilde av Furutoppen. Klikk for mer info" width="300" height="300"/>
 						<span class="text-content1"><span>Furutoppen</span></span></a></li>
 				</ul>
-				<!--Listen fungerer som en fremvisning av hyttene, men også linker til mer informasjon om utleiestedene-->
+				<!--Listen fungerer s
+				om en fremvisning av hyttene, men også linker til mer informasjon om utleiestedene-->
 				<!--Her benyttes JavaScript for å gradvis endre gjennomsiktigheten til
 				teksten over bildene, slik at man markerer hvilket bilde som er valgt. Se Script nederst i HTML-fil-->
 	</article>
@@ -134,13 +135,34 @@ særtegn som æ, ø og å-->
 	</article>
 	</section>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-	<script src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
-	<!--Scripten benyttes for "hover"-funksjon på sidens bilder, som gir en
-	elegant overgang til designet som kommer ved å føre musen over bildene-->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="smoothscroll.js"></script>
-	<!--Scripten benyttes for å få en gradvis scrolling når du klikker på elementene i menyen-->
-	<!--Scriptet ligger i filen "smoothscroll.js"-->
+	<script>
+	//Scripten benyttes for å få en gradvis scrolling til de rette stedene når du klikker i menyen//
+	$(document).ready(function(){
+
+	  $('#ss').click(function(e){
+	    e.preventDefault();
+			//Forhindrer sidehoppet fra å laste inn siden på nytt og "blinke"//
+	    $('html, body').animate({scrollTop: '1000px'}, 800);
+			//Gir oss den plasseringen av scrollen vi ønsker + legger på animasjon slik at den beveger seg saktere//
+	  });
+	  $('#ss2').click(function(e){
+	    e.preventDefault();
+			//Forhindrer sidehoppet fra å laste inn siden på nytt og "blinke"//
+	    $('html, body').animate({scrollTop: '600px'}, 800);
+			//Gir oss den plasseringen av scrollen vi ønsker + legger på animasjon slik at den beveger seg saktere//
+	  });
+
+	  $('#ss3').click(function(e){
+	    e.preventDefault();
+			//Forhindrer sidehoppet fra å laste inn siden på nytt og "blinke"//
+	    $('html, body').animate({scrollTop: '10px'}, 800);
+			//Gir oss den plasseringen av scrollen vi ønsker + legger på animasjon slik at den beveger seg saktere//
+	  });
+	});
+</script>
+<!--Scriptet er plassert i HTML-filen, da det var lite som skulle til og det ikke
+var et behov for å plassere denne i en ulik fil-->
+
 </body>
 </html>

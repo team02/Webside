@@ -6,6 +6,17 @@ body
     padding: 0;
     background-image: url('kayak.jpeg');
     overflow: hidden;
+    font-family: font-family: 'Exo', sans-serif;
+}
+
+img{
+	float: left;
+	height: 12%;
+	width: auto;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+  position: fixed;
 }
 
 /*Setter boksen i midten av siden og sentrerer form'en.*/
@@ -36,7 +47,6 @@ input, select
   font-size: 25px;
   margin: 10px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
 }
 
 /*Endre størrelsen på teksten til input-feltene*/
@@ -60,7 +70,6 @@ Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepi
   font-size: 25px;
   border-radius: 10px; /*Runder av hjørnene til knappen*/
   background-color: #ff8080; /*Setter bakgrunnen til sterk oransje*/
-  font-family: 'Open Sans', sans-serif; /*Google font*/
   width: 200px;
   border-style: solid; /*Fjerner box-shadow og gir en 2D effekt*/
   opacity: 0; /*Setter opacity til 0 slik at knappen kan animeres inn.*/
@@ -79,7 +88,6 @@ Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepi
   font-size: 25px;
   border-radius: 10px;
   background-color: #ff8080;
-  font-family: 'Open Sans', sans-serif;
   width: 150px;
   border-style: solid;
 }
@@ -109,14 +117,12 @@ Hentet fra: http://stackoverflow.com/questions/4580727/override-jquery-ui-datepi
   text-align: center;
   top: -1100px;
   overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
 
 .radio
 {
   white-space: pre-wrap;
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   text-align: center;
 }
@@ -139,7 +145,6 @@ input::-webkit-inner-spin-button {
   top: -1600px;
   border-radius: 15px;
   box-shadow: 2px 2px 2px;
-  font-family: 'Open Sans', sans-serif; /*Google font*/
 }
 
 #bekreft h1
